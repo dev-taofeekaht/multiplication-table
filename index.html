@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+  <input type="number" id="val1" placeholder="enterblock"> 
+  <input type="number" id="val2" placeholder="enterline">
+  <button onclick="nn()">multiply</button>
+  <div id="tao"></div>
+  <script>
+    function nn() {
+      t='';
+      var v1 = val1.value;
+      var v2 = val2.value;
+      t+='<table border=1>'
+        for(i=1;i<=v2;i++){
+          t+='<tr>'
+            
+  for(k=1;k<=v1;k++){
+    t+='<td>' + k + 'x' + i + '=' + (k*i) + '</td>'
+  }
+  '</tr>'
+              
+            
+        }
+
+      '</table>'
+      tao.innerHTML = t
+
+    }
+    
+  </script> 
+
+</body>
+</html>
